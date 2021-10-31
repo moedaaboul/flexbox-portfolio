@@ -46,8 +46,8 @@ The webpage is also responsive to small screens as it then flips to take a colum
 
 ## Features
 
-Additional feature adds a profile picture to the header section
-Additional styling to achieve a much closer feel to the gif mock-up
+- Additional feature adds a profile picture to the header section
+- Additional styling to achieve a much closer feel to the gif mock-up
 
 ## Setup
 - Text editor (VS Code recommended)
