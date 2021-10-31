@@ -8,9 +8,9 @@ Global
   /* declares colour variables with `--` syntax */
   --dark: ;
   --light: #f5f5f5;
-  --sub-headings-color: #34495e; 
-  --navlink-color: #C5C5C5;
-  --header-text-color: #502F40;
+  --sub-headings-color: #34495e;
+  --navlink-color: #c5c5c5;
+  --header-text-color: #502f40;
 }
 
 body {
@@ -25,13 +25,11 @@ main {
   background-color: var(--light);
 }
 
-
 h2,
 h3,
 a {
   color: var(--sub-headings-color);
 }
-
 
 /* 
 ###############
@@ -39,12 +37,10 @@ Header section
 ############### 
 */
 
-
 .header {
   background-color: var(--header-text-color);
   color: var(--navlink-color);
 }
-
 
 /* nav links styling */
 a {
@@ -61,7 +57,6 @@ ul {
   color: var(--navlink-color);
 }
 
-
 .navigation a {
   padding: 10px 15px;
   text-transform: capitalize;
@@ -74,14 +69,13 @@ ul {
   color: #718daa;
 }
 
-
 nav li {
   display: inline-block;
 }
 
 /* h1 text styling */
 
- .my-name {
+.my-name {
   margin-top: 0.25em;
   margin-bottom: 0.5em;
   font-size: 2em;
@@ -91,22 +85,17 @@ nav li {
   background-color: var(--navlink-color);
   color: var(--header-text-color);
   text-align: center;
-} 
-
-h1 {
-
-  color: var(--header-text-color);
 }
 
-
-
+h1 {
+  color: var(--header-text-color);
+}
 
 /* 
 ####################
 Header media queries
 ####################
 */
-
 
 /* flexbox column for smaller screen sizes */
 
@@ -118,10 +107,10 @@ Header media queries
   .header {
     flex-direction: column;
     align-items: center;
-      width: 100%;
-      margin: 0 auto;
-    }   
+    width: 100%;
+    margin: 0 auto;
   }
+}
 
 /* flexbox row direction for larger screen sizes + margin/padding adjustments */
 
@@ -138,23 +127,21 @@ Header media queries
 
   .footer li,
   .navigation li {
-    margin: 0.75em
+    margin: 0.75em;
   }
 
   .footer a,
   .navigation a {
     text-decoration: none;
-    border-bottom: 0.2em solid #C5C5C5;
+    border-bottom: 0.2em solid #c5c5c5;
     padding: 0px 6px 0px;
   }
 
   .my-name {
     padding-left: 2em;
     padding-right: 0.25em;
-  }  
-
+  }
 }
-
 
 /* 
 #####################
@@ -224,14 +211,13 @@ p {
 
 /*headings flex to align to far right of box*/
 
-
-h3, h2 {
+h3,
+h2 {
   justify-content: flex-end;
   display: flex;
   font-size: 2rem;
   text-align: end;
 }
-
 
 /* 
 ###################
@@ -242,30 +228,26 @@ Main Media Queries
 /*large screen size margins, width and padding properties */
 
 @media (min-width: 768px) {
-
   .panel {
     min-width: 20vh;
     max-width: 20vh;
-   padding: 19px;
-  border-right: 3px solid purple;
-    } 
-  
-    .split > * + * {
-      margin-left: 1em;
-      }
+    padding: 19px;
+    border-right: 3px solid purple;
+  }
 
-      p {
-        margin-left: 10px;
-        padding-top: 20px;
-      }
-    
+  .split > * + * {
+    margin-left: 1em;
+  }
 
+  p {
+    margin-left: 10px;
+    padding-top: 20px;
+  }
 }
 
 /*small screen size flex direction adjustment to column */
 
 @media (max-width: 768px) {
-
   .split {
     flex-direction: column;
   }
@@ -273,7 +255,7 @@ Main Media Queries
   .split > * {
     justify-content: center;
     align-content: stretch;
-    }
+  }
 
   .section-breaker {
     flex-direction: column;
@@ -281,7 +263,8 @@ Main Media Queries
     margin: auto;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     text-align: center;
   }
 
@@ -292,28 +275,24 @@ Main Media Queries
     text-align: center;
   }
 
-.footer {
-  flex-wrap: wrap;
-}
-
+  .footer {
+    flex-wrap: wrap;
+  }
 
   .container {
     margin-left: 1rem;
   }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .my-photo {
+    align-self: center;
+  }
 }
-
- .my-photo {
-   align-self: center;
- }
-
-}
-
-
 
 .container {
   padding-top: 40px;
@@ -326,7 +305,6 @@ Footer
 #################
 */
 
-
 .footer {
   align-items: center;
   display: flex;
@@ -338,9 +316,6 @@ Footer
   padding: 1em;
 }
 
-
-
-
 /*Background photo*/
 
 /* 
@@ -348,8 +323,6 @@ Footer
 Banner section - styling
 #########################
 */
-
-
 
 .banner {
   background-repeat: no-repeat;
@@ -359,7 +332,6 @@ Banner section - styling
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
-
 }
 
 .my-photo {
@@ -374,14 +346,13 @@ Banner section - styling
   margin-left: 1rem;
 }
 
-.my-photo>img {
+.my-photo > img {
   width: 100%;
   height: auto;
   position: relative;
   top: 50%;
-  transform: translate(0%, -50%)
+  transform: translate(0%, -50%);
 }
-
 
 .inner {
   background-color: var(--navlink-color);
@@ -395,17 +366,13 @@ Banner section - styling
   align-self: end;
   margin-right: 4rem;
   margin-top: 4.5rem;
-
 }
-
-
 
 /* 
 #########################
 Opacity hover feauture
 #########################
 */
-
 
 img {
   background: #1abc9c;
@@ -420,7 +387,6 @@ img:hover {
   opacity: 1;
 }
 
-
 /* 
 ############################
 Styles text box within image
@@ -431,10 +397,10 @@ Styles text box within image
   position: absolute;
   max-width: 200px;
   margin: 0;
-  padding: .5rem;
+  padding: 0.5rem;
   word-break: break-word;
   font-size: 1.6rem;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   color: #f2f2f2;
   margin-bottom: 1rem;
 }
@@ -444,5 +410,3 @@ Styles text box within image
   justify-content: end;
   align-content: center;
 }
-
-
