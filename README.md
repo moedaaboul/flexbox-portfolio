@@ -38,10 +38,11 @@ The following gif is the mock-up piece which depicts the functionality and outpu
 ![The portfolio webpage includes a navigation bar, a header, banner, About Me section, Work section that contains images and a footer section. The images change opacity when hovered over.](./demo.gif)
 
 ## Appearance
-The following gif is the mock-up piece which depicts the functionality and output expected of my webpage: 
+The following is the actual appearance of my webpage on a large screen device: 
 
 ![The portfolio webpage includes a navigation bar, a header, banner, About Me section, Work section that contains images and a footer section. The images change opacity when hovered over.](./appearance.PNG)
 
+The webpage is also responsive to small screens as it then flips to take a columnar direction.
 
 ## Features
 
@@ -58,7 +59,7 @@ Project is: _complete_.
 
 ## Room for Improvement
 
-This layout is designed for Google Chrome viewing, so you may notice that some of the elements don't look like the mock-up using different browsers. The webpage can be improved to make elements responsive so that the web application is optimized for any browser.
+This layout is designed for Google Chrome viewing. The webpage can be further tested for the use of different browsers.
 
 Some placeholders have also been added and will be updated later upon finalising further web applications.
 
