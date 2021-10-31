@@ -325,7 +325,7 @@ nav li {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 8rem;
-  background-image: url("tile4.png");
+  background-image: url("tile4.PNG");
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
