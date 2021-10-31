@@ -321,6 +321,14 @@ nav li {
 
 /*Background photo*/
 
+/* 
+#########################
+Banner section - styling
+#########################
+*/
+
+
+
 .banner {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -370,7 +378,12 @@ nav li {
 
 
 
-/*opacity image */
+/* 
+#########################
+Opacity hover feauture
+#########################
+*/
+
 
 img {
   background: #1abc9c;
@@ -386,7 +399,11 @@ img:hover {
 }
 
 
-/*box section*/
+/* 
+############################
+Styles text box within image
+############################
+*/
 
 .box-caption {
   position: absolute;
@@ -402,7 +419,6 @@ img:hover {
 
 .container-1,
 .container-2 {
-  /* align-items: flex-start; */
   justify-content: end;
   align-content: center;
 }
