@@ -1,11 +1,16 @@
 /* 
-###############
-Header section
-############### 
+#######
+Global
+#######
 */
 
-main {
-  background-color: #f5f5f5;
+:root {
+  /* declares colour variables with `--` syntax */
+  --dark: ;
+  --light: #f5f5f5;
+  --sub-headings-color: #34495e; 
+  --navlink-color: #C5C5C5;
+  --header-text-color: #502F40;
 }
 
 body {
@@ -16,12 +21,32 @@ body {
   min-height: 100vh;
 }
 
+main {
+  background-color: var(--light);
+}
+
+
 h2,
 h3,
 a {
-  color: #34495e;
+  color: var(--sub-headings-color);
 }
 
+
+/* 
+###############
+Header section
+############### 
+*/
+
+
+.header {
+  background-color: var(--header-text-color);
+  color: var(--navlink-color);
+}
+
+
+/* nav links styling */
 a {
   text-decoration: none;
 }
@@ -32,26 +57,8 @@ ul {
   list-style: none;
 }
 
-
- .my-name {
-  margin-top: 0.25em;
-  margin-bottom: 0.5em;
-  font-size: 2em;
-  left: 0;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  background-color: #C5C5C5;
-  color: #502F40;
-  text-align: center;
-} 
-
-h1 {
-
-  color: #502F40;
-}
-
 .navigation {
-  color: #C5C5C5;
+  color: var(--navlink-color);
 }
 
 
@@ -60,21 +67,48 @@ h1 {
   text-transform: capitalize;
   text-align: center;
   display: block;
-  color: #C5C5C5;
+  color: var(--navlink-color);
 }
 
 .navigation a:hover {
   color: #718daa;
 }
 
+
+nav li {
+  display: inline-block;
+}
+
+/* h1 text styling */
+
+ .my-name {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  left: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: var(--navlink-color);
+  color: var(--header-text-color);
+  text-align: center;
+} 
+
+h1 {
+
+  color: var(--header-text-color);
+}
+
+
+
+
 /* 
-#################################
-Header media queries for resizing
-#################################
+####################
+Header media queries
+####################
 */
 
 
-
+/* flexbox column for smaller screen sizes */
 
 @media (min-width: 769px) {
   .header,
@@ -89,7 +123,7 @@ Header media queries for resizing
     }   
   }
 
-
+/* flexbox row direction for larger screen sizes + margin/padding adjustments */
 
 @media (min-width: 1025px) {
   .header {
@@ -121,19 +155,22 @@ Header media queries for resizing
 
 }
 
-/*Header section end */
 
 /* 
 #####################
-Main Section Begins
+Main (Nested Flexbox)
 #####################
 */
 
+/* flexbox column direction for main elements which constitute About Me & Work */
 
 main {
   display: flex;
   flex-direction: column;
 }
+
+/* flexbox column direction for Work container elements which constitute conatiner-1 (big-picture) & container-2 (smaller pictures)*/
+
 .container {
   display: flex;
   flex-direction: column;
@@ -141,7 +178,7 @@ main {
   text-align: center;
 }
 
-
+/* flexbox column direction for container-1 (big picture or my photo)*/
 
 .container-1 {
   margin-left: 3vw;
@@ -150,10 +187,14 @@ main {
   flex-direction: column;
 }
 
+/* flexbox column direction for container-2 (smaller pictures)*/
+
 .container-2 {
   display: flex;
   flex-direction: column;
 }
+
+/* flexbox container-2 elements split into groups of 2 for maintaining format*/
 
 .split {
   display: flex;
@@ -163,17 +204,17 @@ main {
   justify-content: center;
 }
 
+/*in-line flex applied to family of side headers and content to achieve row direciton*/
+
 .section-breaker {
   display: inline-flex;
   padding: 0;
 }
 
-
-
 .panel {
   height: auto;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: var(--light);
 }
 
 p {
@@ -181,6 +222,7 @@ p {
   padding-top: 20px;
 }
 
+/*headings flex to align to far right of box*/
 
 
 h3, h2 {
@@ -189,6 +231,15 @@ h3, h2 {
   font-size: 2rem;
   text-align: end;
 }
+
+
+/* 
+###################
+Main Media Queries
+###################
+*/
+
+/*large screen size margins, width and padding properties */
 
 @media (min-width: 768px) {
 
@@ -211,9 +262,9 @@ h3, h2 {
 
 }
 
+/*small screen size flex direction adjustment to column */
 
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   .split {
     flex-direction: column;
@@ -264,35 +315,15 @@ h3, h2 {
 
 
 
-
-
-
-
-.small-2 {
-  display: flex;
-  flex-direction: row;
-  margin: 0.5vw;
-  width: 49%;
-
-}
-
-
-
-
-
-/* Split about me and text */
-
-
-
 .container {
   padding-top: 40px;
   padding-bottom: 15px;
 }
 
 /* 
-#####################
-Footer Section here
-#####################
+#################
+Footer
+#################
 */
 
 
@@ -307,17 +338,8 @@ Footer Section here
   padding: 1em;
 }
 
-nav li {
-  display: inline-block;
-}
 
 
-
-
-.header {
-  background-color: #502F40;
-  color: #C5C5C5;
-}
 
 /*Background photo*/
 
@@ -362,8 +384,8 @@ Banner section - styling
 
 
 .inner {
-  background-color: #C5C5C5;
-  color: #502F40;
+  background-color: var(--navlink-color);
+  color: var(--header-text-color);
   padding: 0.05rem;
   padding-right: 0.65em;
   padding-left: 0.65em;
