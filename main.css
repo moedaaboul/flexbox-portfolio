@@ -86,7 +86,6 @@ Header media queries for resizing
     align-items: center;
       width: 100%;
       margin: 0 auto;
-      /* max-width: 1150px; */
     }   
   }
 
@@ -241,6 +240,10 @@ h3, h2 {
     margin-right: 1rem;
     text-align: center;
   }
+
+.footer {
+  flex-wrap: wrap;
+}
 
 
   .container {
