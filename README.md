@@ -5,10 +5,11 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
+* [Mock-up Appearance](#mock-up-appearance)
 * [Appearance](#appearance)
 * [Features](#features)
 * [Setup](#setup)
-* [Project Status](#features)
+* [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
 * [License](#license)
@@ -23,21 +24,29 @@ My career advisor has tasked me to start building my portfolio page using the te
 - Images when clicked take the user to the deployed application
 - The page has a responsive layout that adapts to various screens and devices
 
+No starter code was provided for the purposes of completing this web application.
+
 ## Technologies used
 Have used the following technologies only: 
 
 - HTML5
 - CSS3
 
-## Appearance
-The following gif resembles the functionality and output of my webpage: 
+## Mock-up Appearance
+The following gif is the mock-up piece which depicts the functionality and output expected of my webpage: 
 
 ![The portfolio webpage includes a navigation bar, a header, banner, About Me section, Work section that contains images and a footer section. The images change opacity when hovered over.](./demo.gif)
+
+## Appearance
+The following gif is the mock-up piece which depicts the functionality and output expected of my webpage: 
+
+![The portfolio webpage includes a navigation bar, a header, banner, About Me section, Work section that contains images and a footer section. The images change opacity when hovered over.](./appearance.PNG)
 
 
 ## Features
 
 Additional feature adds a profile picture to the header section
+Additional styling to achieve a much closer feel to the gif mock-up
 
 ## Setup
 - Text editor (VS Code recommended)
