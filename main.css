@@ -1,6 +1,8 @@
-/* * {
-  box-sizing: border-box;
-} */
+/* 
+###############
+Header section
+############### 
+*/
 
 main {
   background-color: #f5f5f5;
@@ -32,7 +34,6 @@ ul {
 
 
  .my-name {
-  /* padding: 1em; */
   margin-top: 0.25em;
   margin-bottom: 0.5em;
   font-size: 2em;
@@ -45,10 +46,7 @@ ul {
 } 
 
 h1 {
-  /* font-size: 2rem;
-  padding: 2px;
 
-  margin: 10px; */
   color: #502F40;
 }
 
@@ -56,7 +54,7 @@ h1 {
   color: #C5C5C5;
 }
 
-/* .my-name, */
+
 .navigation a {
   padding: 10px 15px;
   text-transform: capitalize;
@@ -68,6 +66,15 @@ h1 {
 .navigation a:hover {
   color: #718daa;
 }
+
+/* 
+#################################
+Header media queries for resizing
+#################################
+*/
+
+
+
 
 @media (min-width: 769px) {
   .header,
@@ -104,8 +111,6 @@ h1 {
   .footer a,
   .navigation a {
     text-decoration: none;
-    /* text-underline-position: under;
-    text-decoration-thickness: 20%; */
     border-bottom: 0.2em solid #C5C5C5;
     padding: 0px 6px 0px;
   }
@@ -113,15 +118,19 @@ h1 {
   .my-name {
     padding-left: 2em;
     padding-right: 0.25em;
-    /* padding: 10px 15px;
-    text-transform: capitalize;
-    text-align: center;
-    display: block; */
   }  
 
 }
 
 /*Header section end */
+
+/* 
+#####################
+Main Section Begins
+#####################
+*/
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -164,12 +173,8 @@ main {
 
 .panel {
   height: auto;
-  /* min-width: 20vh;
-  max-width: 20vh; */
-  /* padding: 19px; */
   margin-bottom: 20px;
   background-color: #f5f5f5;
-  /* border-right: 3px solid purple; */
 }
 
 p {
@@ -255,29 +260,9 @@ h3, h2 {
 }
 
 
-/*any element that has a sibling before it */
-/* .split > * + * {
-margin-left: 2em;
-} */
-
-/* 
-
-.sub-container-2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
 
 
-.main-image {
-  /* max-width:300px;
-  max-height:300px;
-  width: 50%; 
-  height: auto;
-  max-width: 200px;
-  max-height: 200px;
-} */
 
 
 .small-2 {
@@ -285,18 +270,12 @@ margin-left: 2em;
   flex-direction: row;
   margin: 0.5vw;
   width: 49%;
-  /* flex-basis: 100px; */
+
 }
 
-/* .container .container-1,
-.container .sub-container-2 {
-   width: 100%;
-  height: auto;}  */
 
-/* @media screen and (max-width: 400px) {
-    .container div { margin: 0; }
-    .container { padding: 0; }  
-  } */
+
+
 
 /* Split about me and text */
 
@@ -306,6 +285,13 @@ margin-left: 2em;
   padding-top: 40px;
   padding-bottom: 15px;
 }
+
+/* 
+#####################
+Footer Section here
+#####################
+*/
+
 
 .footer {
   align-items: center;
@@ -323,12 +309,7 @@ nav li {
 }
 
 
- /* h3, h2 {
-  justify-content: flex-end;
-  display: flex;
-  font-size: 2rem;
-  text-align: center;
-} */
+
 
 .header {
   background-color: #502F40;
@@ -345,7 +326,7 @@ nav li {
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: stretch; */
+
 }
 
 .my-photo {
@@ -379,10 +360,9 @@ nav li {
   position: absolute;
   font-size: 1.6rem;
   align-self: end;
-  /* justify-self: end; */
   margin-right: 4rem;
   margin-top: 4.5rem;
-  /* flex: 1 1 15%; */
+
 }
 
 
