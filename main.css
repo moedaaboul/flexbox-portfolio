@@ -227,7 +227,7 @@ Main Media Queries
 
 /*large screen size margins, width and padding properties */
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .panel {
     min-width: 20vh;
     max-width: 20vh;
