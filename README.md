@@ -1,6 +1,6 @@
 # My Portfolio
 > My Portfolio
-> Live demo [_here_](https://moedaaboul.github.io/02_Portfolio/). 
+> Live demo [_here_](https://moedaaboul.github.io/flexbox-portfolio/). 
 
 ## Table of Contents
 * [General Info](#general-information)
